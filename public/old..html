@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube → Blog Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="root">
+  <div class="container">
+    <h2>YouTube-to-Blog</h2>
+
+    <div class="input-box">
+      <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL">
+      <button onclick="convert()">Convert</button>
+    </div>
+
+    <div class="content">
+      <!-- Blog Preview -->
+      <div class="box">
+        <h3>Blog Preview</h3>
+        <p id="blogTitle"><b>Blog Title:</b> Example Blog</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed at felis eu ligula pulvinar dapibus.</p>
+      </div>
+
+      <!-- Blog Mode -->
+      <div class="box">
+        <h3>Blog Mode</h3>
+        <pre>
+function convert() {
+  let url = document.getElementById("youtubeUrl").value;
+  console.log("Converting:", url);
+}
+        </pre>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
